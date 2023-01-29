@@ -1,0 +1,106 @@
+.introduction{
+    background-color: #797676;
+    display: grid;
+    grid-template-columns: 35% 25% 15%;
+}
+
+.introduction div{
+    position: relative;
+}
+
+.introduction .image-wrapper-banner{
+    height: 100%;
+    width: 100%;
+    border-right: solid 1px rgba(27, 22, 20, 0.29);
+}
+
+.introduction .image-wrapper-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: center;
+}
+
+.introduction .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.introduction .content .title{
+    font-family: 'Plantagenet Cherokee', sans-serif;
+    /*font-family: 'Gurmukhi MT', sans-serif;*/
+    color: rgba(233, 233, 233, 0.71);
+    font-size: 70px;
+    font-weight: 100;
+    /*text-space: 20px;*/
+    letter-spacing: 20px;
+    padding-right: 20px;
+}
+
+.introduction .numbering{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    font-family: 'Plantagenet Cherokee', sans-serif;
+    font-size: 50px;
+    color: rgba(27, 22, 20, 0.77);
+}
+
+.introduction .content .scroll-down-animation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 0;
+}
+
+
+.introduction .content .scroll-down-animation .paragraph{
+    font-family: 'Somatic Rounded', sans-serif;
+    color: rgba(233, 233, 233, 0.71);
+    font-size: 14px;
+    letter-spacing: 4px;
+    padding-right: 20px;
+}
+
+.introduction .content .scroll-down-animation .arrow-down{
+    padding-right: 20px;
+}
+
+.introduction .content .scroll-down-animation .arrow-down span{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-bottom: solid 1px rgba(233, 233, 233, 0.71);
+    border-right: solid 1px rgba(233, 233, 233, 0.71);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate-arrow 2s infinite;
+}
+
+.introduction .content .scroll-down-animation .arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+.introduction .content .scroll-down-animation .arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+@keyframes animate-arrow {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}

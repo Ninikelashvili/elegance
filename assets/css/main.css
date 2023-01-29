@@ -1,0 +1,14 @@
+.swiper-pagination-progressbar.swiper-pagination-vertical,
+.swiper-vertical>.swiper-pagination-progressbar {
+    position: fixed;
+    top: 40vh;
+    left: 95%;
+    height: 185px;
+    width: 2px;
+    background-color: rgba(27, 22, 20, 0.29);
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #1B1614;
+}
+

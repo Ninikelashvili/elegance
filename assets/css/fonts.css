@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Somatic Rounded';
+    src: url('../fonts/Somatic-Rounded.eot');
+    src: url('../fonts/Somatic-Rounded.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Somatic-Rounded.woff2') format('woff2'),
+        url('../fonts/Somatic-Rounded.woff') format('woff'),
+        url('../fonts/Somatic-Rounded.ttf') format('truetype'),
+        url('../fonts/Somatic-Rounded.svg#Somatic-Rounded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plantagenet Cherokee';
+    src: url('../fonts/PlantagenetCherokee.eot');
+    src: url('../fonts/PlantagenetCherokee.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlantagenetCherokee.woff2') format('woff2'),
+    url('../fonts/PlantagenetCherokee.woff') format('woff'),
+    url('../fonts/PlantagenetCherokee.ttf') format('truetype'),
+    url('../fonts/PlantagenetCherokee.svg#PlantagenetCherokee') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
