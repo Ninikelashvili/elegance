@@ -9,15 +9,17 @@
     <title>Elegance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/fonts.css">
-<!--    <link href="https://fonts.cdnfonts.com/css/gurmukhi-mt" rel="stylesheet">-->
     <link rel="stylesheet" href="./assets/css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/libs/fullpage.min.css">
     <link rel="stylesheet" href="./assets/css/libs/aos.css">
     <link rel="stylesheet" href="./assets/css/app.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/introduction.css">
+    <link rel="stylesheet" href="./assets/css/women.css">
 </head>
 
 <body class="page-main">
+
     <header class="header">
         <nav>
             <a class="logo" href="#">ELEGANCE</a>
@@ -28,9 +30,9 @@
         </nav>
     </header>
 
-    <div class="main-swiper mainSlider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide introduction">
+    <div id="app">
+        <div class="section" id="section0">
+            <div class="introduction">
                 <div class="image-wrapper-banner" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
                     <img src="./assets/media/intro-image-1.jpg" alt="photo">
                 </div>
@@ -53,15 +55,63 @@
                 </div>
                 <div class="numbering">01</div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
         </div>
 
-        <div class="swiper-pagination main-progressbar"></div>
+        <div class="section" id="section1">
+
+            <div class="women container">
+
+                <div class="main-content">
+                    <div class="headline">
+                        <h2 class="title">
+                            Women's <br>
+                            <span>Best  Seller</span>
+                        </h2>
+                        <div class="numbering">02</div>
+                    </div>
+
+                    <div class="illustration-wrapper">
+                        <div class="image-wrapper" data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="0">
+                            <img src="assets/media/intro-image-1.jpg" alt="photo">
+                        </div>
+                        <div class="image-wrapper" data-aos="fade-down" data-aos-duration="1000"  data-aos-offset="0">
+                            <img src="assets/media/intro-image-2.jpg" alt="photo">
+                        </div>
+                        <div class="image-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                            <img src="assets/media/intro-image-3.jpg" alt="photo">
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <p class="paragraph">It is a fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                            it has a more-or-less normal distribution of letters, as opposed to using
+                            It is a fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                            it has a more-or-less normal distribution of letters, as opposed to using
+                        </p>
+                        <a href="#" class="btn-common">go to shop</a>
+                    </div>
+                </div>
+
+                <div class="additional-content">
+                    <div class="image-wrapper" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                        <img src="assets/media/intro-image-1.jpg" alt="image">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            page 3
+        </div>
     </div>
 
-    <script src="./assets/js/libs/swiper-bundle.min.js"></script>
-    <script src="./assets/js/libs/aos.js"></script>
-    <script src="./assets/js/slider.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script  type="text/javascript" src="./assets/js/libs/aos.js"></script>
+    <script  type="text/javascript" src="./assets/js/libs/jquery.min.js"></script>
+    <script  type="text/javascript" src="./assets/js/libs/easing.min.js"></script>
+    <script  type="text/javascript" src="./assets/js/libs/fullpage.min.js"></script>
+    <script  type="text/javascript" src="assets/js/page.js"></script>
+    <script  type="text/javascript" src="./assets/js/app.js"></script>
 </body>
