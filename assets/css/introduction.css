@@ -2,8 +2,6 @@
     background-color: #797676;
     display: grid;
     grid-template-columns: 35% 25% 15%;
-    height: 100%;
-    overflow-y: hidden;
 }
 
 .introduction .image-wrapper-banner{
@@ -26,7 +24,7 @@
 .introduction .content .title{
     color: rgba(233, 233, 233, 0.71);
     letter-spacing: 20px;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .introduction .numbering{
@@ -47,12 +45,12 @@
 .introduction .content .scroll-down-animation .paragraph{
     color: rgba(233, 233, 233, 0.71);
     letter-spacing: 4px;
-    padding-right: 20px;
+    /*padding-left: 20px;*/
 }
 
-.introduction .content .scroll-down-animation .arrow-down{
-    padding-right: 20px;
-}
+/*.introduction .content .scroll-down-animation .arrow-down{*/
+/*    padding-left: 20px;*/
+/*}*/
 
 .introduction .content .scroll-down-animation .arrow-down span{
     display: block;
@@ -87,3 +85,45 @@
     }
 }
 /* end scroll down animation*/
+
+
+
+/*responsive styles*/
+@media (max-width: 992px) {
+    .introduction{
+        grid-template-columns: 50% 25% 25%;
+    }
+
+    .introduction .numbering{
+        right: 35px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .introduction{
+        grid-template-columns: 100%;
+    }
+
+    .introduction .image-wrapper-banner{
+        height: 34vh;
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .introduction .numbering {
+        right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* end responsive styles*/

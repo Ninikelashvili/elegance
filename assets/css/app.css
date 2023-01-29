@@ -15,11 +15,14 @@ img{
 }
 
 html,
-body,
-.section{
-    height: 100vh;
-    width: 100vw;
+body{
+    height: 100%;
+    width: 100%;
     overflow-y: hidden;
+}
+
+.fp-overflow{
+    height: 100vh;
 }
 /* end general styles*/
 
@@ -91,7 +94,9 @@ body,
 }
 
 .container{
-    padding: 0 50px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .btn-common{
@@ -112,3 +117,47 @@ body,
     color: #efefef;
 }
 /*end common styles*/
+
+@media (max-width: 992px) {
+    .btn-common{
+        padding: 2vw 5vw;
+        max-width: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .title{
+        font-size: 26px;
+    }
+
+    .title br{
+        display: none;
+    }
+
+    .btn-common {
+        padding: 15px 30px;
+    }
+
+    .numbering{
+        font-size: 30px;
+    }
+}

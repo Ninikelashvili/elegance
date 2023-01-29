@@ -1,11 +1,10 @@
 .women{
     background-color: #efefef;
-    padding-top: 80px;
-    padding-bottom: 80px;
     display: grid;
     grid-template-columns: 60% 30%;
+    justify-content: space-between;
     gap: 0 50px;
-    height: 100%;
+    padding: 5vw;
 }
 
 .women .title{
@@ -39,11 +38,15 @@
     gap: 0 50px;
 }
 
-
 .women .main-content .content .paragraph{
     max-width: 300px;
     font-size: 13px;
     color:  #1B1614;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 7;
 }
 
 .women .illustration-wrapper{
@@ -58,4 +61,100 @@
     max-width: 150px;
     width: 100%;
     height: 200px;
+}
+
+
+
+@media (max-width: 1280px) {
+    .women{
+        grid-template-columns: 65% 30%;
+    }
+    .women .main-content .content .paragraph{
+        max-width: 30vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .women .main-content{
+        gap: 2vw 0
+    }
+    .women .illustration-wrapper{
+        margin-bottom: 0;
+        gap: 0 20px;
+    }
+    .women .illustration-wrapper .image-wrapper{
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px){
+    .women{
+        grid-template-columns: 100%;
+        height: max-content;
+        min-height: 100vh;
+        gap: 20px 0;
+    }
+    .women .additional-content .image-wrapper{
+        width: 20%;
+    }
+
+    .women .main-content .content{
+        width: 100%;
+    }
+
+    .women .main-content .content .paragraph{
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 567px) {
+    .women .main-content .content{
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .women .additional-content .image-wrapper{
+        width: 30%;
+    }
+
+    .women .headline{
+        padding: 50px 0 20px 0;
+    }
+
+    .women .illustration-wrapper{
+        gap: 0 10px;
+        justify-content: space-between;
+    }
+
+    .women .additional-content .image-wrapper{
+        display: none;
+    }
+
+    .women .illustration-wrapper .image-wrapper{
+        max-width: 100%;
+        width: 100%;
+        height: 40vw;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .women .main-content .headline{
+        gap: 0 20px;
+    }
+
+    .women .illustration-wrapper{
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    .women .illustration-wrapper .image-wrapper{
+        height: 100vw;
+    }
+
+    .fp-is-overflow>.fp-overflow{
+        height: max-content;
+    }
 }
