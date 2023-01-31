@@ -64,7 +64,6 @@
 }
 
 
-
 @media (max-width: 1280px) {
     .women{
         grid-template-columns: 65% 30%;
@@ -75,86 +74,80 @@
 }
 
 @media (max-width: 992px) {
-    .women .main-content{
-        gap: 2vw 0
+
+    .women.container{
+        height: max-content;
     }
+
+    .women .main-content{
+        gap: 10vw 0
+    }
+
     .women .illustration-wrapper{
         margin-bottom: 0;
         gap: 0 20px;
     }
-    .women .illustration-wrapper .image-wrapper{
-        width: 100px;
-        height: 150px;
-    }
 }
 
 @media (max-width: 768px){
+
     .women{
         grid-template-columns: 100%;
         height: max-content;
         min-height: 100vh;
         gap: 20px 0;
     }
-    .women .additional-content .image-wrapper{
-        width: 20%;
-    }
 
     .women .main-content .content{
         width: 100%;
-    }
-
-    .women .main-content .content .paragraph{
-        max-width: 100%;
-    }
-}
-
-
-@media (max-width: 567px) {
-    .women .main-content .content{
         flex-direction: column;
         gap: 20px 0;
     }
 
-    .women .additional-content .image-wrapper{
-        width: 30%;
-    }
-
     .women .headline{
         padding: 50px 0 20px 0;
+        gap: 0 20px;
     }
 
-    .women .illustration-wrapper{
-        gap: 0 10px;
-        justify-content: space-between;
+    .women .main-content .content .paragraph{
+        max-width: 100%;
     }
 
     .women .additional-content .image-wrapper{
         display: none;
     }
 
+    .women .illustration-wrapper{
+        gap: 10px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
     .women .illustration-wrapper .image-wrapper{
         max-width: 100%;
         width: 100%;
-        height: 40vw;
-    }
-}
-
-
-@media (max-width: 375px) {
-    .women .main-content .headline{
-        gap: 0 20px;
-    }
-
-    .women .illustration-wrapper{
-        flex-direction: column;
-        gap: 10px 0;
-    }
-
-    .women .illustration-wrapper .image-wrapper{
         height: 100vw;
     }
 
-    .fp-is-overflow>.fp-overflow{
-        height: max-content;
+}
+
+@media (max-width: 576px) {
+    .women .headline{
+        padding: 40px 0 0 0;
     }
+}
+
+@media (max-width: 375px) {
+    /*.women .main-content .headline{*/
+    /*    gap: 0 20px;*/
+    /*}*/
+
+    /*.women .illustration-wrapper{*/
+    /*    flex-direction: column;*/
+    /*    gap: 10px 0;*/
+    /*}*/
+
+    /*.women .illustration-wrapper .image-wrapper{*/
+    /*    height: 100vw;*/
+    /*}*/
 }
