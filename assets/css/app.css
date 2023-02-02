@@ -85,7 +85,7 @@ body{
 
 /*navigation styles*/
 .navigation-wrapper{
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -118,20 +118,25 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    padding: 50px;
+    padding: 50px 0;
     gap: 30px;
+    max-width: 1366px;
+    width: 100%;
     height: 100%;
     position: relative;
+    margin: 0 auto;
     z-index: 99999;
 }
 
 .navigation-wrapper .navigation ul li {
     position: relative;
+    padding-bottom: 20px;
+    cursor: pointer;
 }
 
 .navigation-wrapper .navigation ul li::after{
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     left: 0;
     content: '';
     height: 1px;
@@ -154,12 +159,47 @@ body{
     color: rgba(239, 239, 239, 0.65);
     text-transform: uppercase;
     letter-spacing: 1px;
-    cursor: pointer;
+}
+
+.navigation-wrapper .navigation-gallery{
+    position: absolute;
+    top: 32%;
+    right: 5%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    z-index: 33333;
+}
+
+.navigation-wrapper .gallery-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.navigation-wrapper .gallery-wrapper .image-wrapper{
+    height: 35vh;
+    width: 15vw;
+}
+
+.navigation-wrapper .btn-common{
+    color: #efefef;
+    border: solid 1px rgba(239, 239, 239, 0.52);
+}
+
+.navigation-wrapper .btn-common:hover{
+    background-color: #efefef;
+    color: #1B1614;
 }
 /* end navigation styles*/
 
 
 /*javascript styles*/
+body.navigation-open{
+    overflow-y: hidden !important;
+}
+
 body.navigation-open .burger div{
     background-color: #efefef;
 }
@@ -172,7 +212,8 @@ body.navigation-open .burger .line-2{
     transform: rotate(45deg) translate(-2px, -1px);
 }
 
-body.navigation-open .navigation-wrapper .overlay{
+body.navigation-open .navigation-wrapper .overlay,
+body.navigation-open .navigation-wrapper .navigation-gallery{
     visibility: visible;
     opacity: 1;
 }
@@ -234,8 +275,30 @@ body.navigation-open .logo{
 }
 /*end common styles*/
 
+@media (max-width: 1280px) {
+
+    .navigation-wrapper .gallery-wrapper .image-wrapper{
+        height: 20vw;
+    }
+
+    .navigation-wrapper .btn-common{
+        padding: 1.5vw 3vw;
+    }
+}
+
+@media (max-width: 1080px) {
+    .navigation-wrapper .navigation{
+        height: 65%;
+    }
+
+    .navigation-wrapper .navigation-gallery{
+        top: 10%;
+        right: 2%;
+    }
+}
 
 @media (max-width: 992px) {
+
     .btn-common{
         padding: 2vw 5vw;
         max-width: 200px;
@@ -243,6 +306,10 @@ body.navigation-open .logo{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .navigation-wrapper .btn-common{
+        max-width: 150px;
     }
 
     .page-main{
@@ -253,9 +320,31 @@ body.navigation-open .logo{
     .page-main::-webkit-progress-bar{
         display: none;
     }
+
+    .navigation-wrapper .navigation ul{
+        padding: 12px 0;
+    }
+
+
+    .navigation-wrapper .navigation-gallery{
+        top: 15%;
+    }
+
+    .navigation-wrapper .gallery-wrapper{
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        gap: 0 20px;
+    }
+
+    .navigation-wrapper .gallery-wrapper .image-wrapper{
+        height: 28vw;
+        width: 20vw;
+    }
 }
 
+
 @media (max-width: 768px) {
+
     .title{
         font-size: 36px;
         line-height: 40px;
@@ -284,4 +373,39 @@ body.navigation-open .logo{
     .numbering{
         font-size: 30px;
     }
+
+    .navigation-wrapper .btn-common{
+        position: fixed;
+        top: 70%;
+        left: 20px;
+        padding: 15px 55px;
+        max-width: max-content;
+    }
+
+    body.navigation-open .navigation-wrapper .navigation{
+        min-height: 100vh;
+        height: max-content;
+        padding-top: 70px;
+    }
+
+    .navigation-wrapper .navigation-gallery{
+        left: 0;
+        top: 130px;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        overflow-x: scroll;
+    }
+
+    .navigation-wrapper .gallery-wrapper{
+        height: 100%;
+        width: max-content;
+    }
+
+    .navigation-wrapper .gallery-wrapper .image-wrapper{
+        height: 300px;
+        width: 200px;
+    }
+
 }
