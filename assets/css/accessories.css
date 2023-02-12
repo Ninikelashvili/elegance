@@ -47,9 +47,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vw;
+    width: 94vw;
     letter-spacing: 4vw;
-    font-size: 8vw;
+    font-size: 7.5vw;
     z-index: 300;
     color: rgba(27, 22, 20, 0.22);
 }

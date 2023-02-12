@@ -122,8 +122,8 @@
 @media (max-width: 768px) {
     .social{
         grid-template-columns: 100%;
-        height: max-content;
         padding: 50px 20px;
+        background-color: #c4c4bd;
     }
     .social .social-list{
         align-items: center;

@@ -17,7 +17,6 @@ const active = () => {
 }
 
 active()
-
 AOS.init();
 
 
