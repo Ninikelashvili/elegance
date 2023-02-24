@@ -385,11 +385,7 @@ body.navigation-open .navigation-wrapper .navigation{
     }
 
     .navigation-wrapper .btn-common{
-        position: fixed;
-        top: 70%;
-        left: 20px;
-        padding: 15px 55px;
-        max-width: max-content;
+        display: none;
     }
 
     body.navigation-open .navigation-wrapper .navigation{
@@ -400,7 +396,7 @@ body.navigation-open .navigation-wrapper .navigation{
 
     .navigation-wrapper .navigation-gallery{
         left: 0;
-        top: 130px;
+        top: 150px;
         max-width: 100%;
         width: 100%;
         height: 100%;
