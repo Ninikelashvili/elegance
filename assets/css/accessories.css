@@ -109,7 +109,7 @@
 @media (max-width: 576px) {
     .accessories{
         grid-template-columns: 100%;
-        height: max-content;
+        height: max-content !important;
         gap: 0;
     }
 
