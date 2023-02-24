@@ -67,7 +67,6 @@
     height: 250px;
 }
 
-
 @media (max-width: 1280px) {
     .women{
         grid-template-columns: 65% 30%;

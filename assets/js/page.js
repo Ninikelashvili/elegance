@@ -9,3 +9,5 @@ const fullPage = new fullpage("#app", {
         $('.fp-table.active .aos-init').addClass('aos-animate');
     },
 });
+
+
